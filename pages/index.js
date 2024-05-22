@@ -5,10 +5,6 @@ export default function Home({ result }) {
   return (
     <div>
       <h1>Data from MongoDB</h1>
-      <Link href="/list">List</Link>
-      <Link href="/write" style={{ marginLeft: "15px" }}>
-        Write
-      </Link>
     </div>
   );
 }
