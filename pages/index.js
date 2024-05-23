@@ -1,7 +1,12 @@
-import Link from "next/link";
 import connectDB from "../utill/database";
+import { useSession, signOut } from "next-auth/react";
+import LogInBtn from "./logInBtn";
 
 export default function Home({ result }) {
+  const { data: session, status } = useSession();
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
   return (
     <div>
       <h1>Data from MongoDB</h1>

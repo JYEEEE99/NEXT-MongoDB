@@ -44,10 +44,25 @@ a {
 a:hover {
   color: #000;
 }
-.navber {
+.navbar {
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+
 }
-.navber a {
+.user__box {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.user__box button {
+  padding: 0;
+  padding: 6px 12px;
+  margin-left: 15px;
+}
+
+.navbarA {
   margin-right: 20px;
 }
 .logo {

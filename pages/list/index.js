@@ -2,7 +2,6 @@ import connectDB from "@/utill/database";
 import ListItem from "./ListItem";
 
 export default function List({ result }) {
-  console.log(result);
   return (
     <div className="list-bg">
       <ListItem result={result} />
